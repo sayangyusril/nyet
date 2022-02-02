@@ -41,6 +41,7 @@ global.media = 'https://telegra.ph/file/aed723ee59556f948f9a0.jpg'
 
 global.wait = '*tunggu sedang diproses...*'
 global.eror = '*Server Error*'
+global.down = 'Api Down'
 
 global.multiplier = 69 // The higher, The harder levelup
 
