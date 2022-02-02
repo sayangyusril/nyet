@@ -12,8 +12,8 @@ instagramdl(args[0]).then(async res => {
     }
   })
 }
-handler.help = ['ig'].map(v => v + ' <url>')
-handler.tags = ['download']
+handler.help = ['instagram'].map(v => v + ' <url>')
+handler.tags = ['downloader']
 handler.command = /^(ig|igdl|instagram)$/i
 handler.limit = false
 handler.premium = false
