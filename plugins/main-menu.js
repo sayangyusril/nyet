@@ -5,7 +5,6 @@ let levelling = require('../lib/levelling')
 let tags = {
   'main': 'MENU UTAMA',
   'game': 'MENU GAME',
-  'rpg': 'MENU RPG',
   'xp': 'MENU EXP',
   'premium': 'MENU PREMIUM',
   'group': 'MENU GROUP',
@@ -18,11 +17,8 @@ let tags = {
   'github': 'MENU GITHUB',
   'internet': 'INTERNET',
   'kerang': 'MENU KERANG',
-  'anime': 'MENU ANIME',
   'downloader': 'DOWNLOADER',
-  'nsfw': 'MENU NSFW',
   'tools': 'MENU TOOLS',
-  'advanced': 'ADVANCED',
   'quotes': 'MENU QUOTES',
   'info': 'MENU INFO',
 }
@@ -31,7 +27,7 @@ const defaultMenu = {
 ┌ 「 %me 」
 │❑ Version: %version
 │❑ Library: Baileys-MD
-│❑ Mode: ${global.opts['self'] ? 'Self' : 'publik'}
+│❑ Mode: ${global.opts['self'] ? 'Self' : 'Publik'}
 │❑ Runtime: %uptime
 └
 %readmore`.trimStart(),
@@ -151,7 +147,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
            hydratedButtons: [{
              urlButton: {
                displayText: 'Source Code',
-               url: 'https://github.com/RHns20/MarsiBOT-MD'
+               url: 'https://github.com/RHns20/MarsBOT-MD'
              }
 
            },
