@@ -13,6 +13,6 @@ handler.help = ['githubdl']
 handler.tags = ['github']
 handler.command = /githubdl/i
 
-handler.limit = 5
+handler.limit = false
 
 module.exports = handler
