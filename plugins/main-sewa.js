@@ -1,11 +1,11 @@
-const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERA*L, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys-md')
+const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys-md')
 let fs = require('fs')
 let handler = async (m) => {
     let who
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
     let user = global.db.data.users[who]
-let duit = `*LIST SEWA BOT*\n
+let anu = `LIST SEWA BOT\n
 10 Hari - 8000
 30 Hari - 20000\n
 Pulsa 
@@ -16,7 +16,7 @@ Dana [083832492541]`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
-           hydratedContentText: duit,
+           hydratedContentText: anu,
            locationMessage: { 
            jpegThumbnail: fs.readFileSync('./media/menu.jpg') }, 
            hydratedFooterText: wm,
@@ -46,6 +46,6 @@ Dana [083832492541]`
 }
 handler.help = ['sewabot']
 handler.tags = ['info']
-handler.command = /^(sewa|sewabot)$/i
+handler.command = /^(sewabot|sewa)$/i
 
 module.exports = handler
