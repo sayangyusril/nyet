@@ -24,7 +24,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-┌ 「 %me 」
+┌ 「 MarsBOT-MD 」
 │❑ Version: %version
 │❑ Library: Baileys-MD
 │❑ Mode: ${global.opts['self'] ? 'Self' : 'Publik'}
