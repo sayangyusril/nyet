@@ -15,6 +15,7 @@ let tags = {
   'sticker': 'MENU CONVERT',
   'maker': 'MENU MAKER',
   'github': 'MENU GITHUB',
+  'stalk': 'MENU STALK',
   'internet': 'INTERNET',
   'kerang': 'MENU KERANG',
   'downloader': 'DOWNLOADER',
@@ -24,16 +25,16 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-┌ 「 MarsBOT-MD 」
+┌ 「 *MarsBOT-MD* 」
 │❑ Version: %version
 │❑ Library: Baileys-MD
 │❑ Mode: ${global.opts['self'] ? 'Self' : 'Publik'}
 │❑ Runtime: %uptime
-└
+└─
 %readmore`.trimStart(),
   header: '*「 %category 」*',
-  body: '≻ %cmd %islimit %isPremium',
-  footer: '\n',
+  body: '│ ≻ %cmd %islimit %isPremium',
+  footer: '└─\n',
   after: `
 `,
 }
@@ -142,7 +143,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
          hydratedTemplate: {
            hydratedContentText: text.trim(),
            locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./media/rhns.jpg') },
+           jpegThumbnail: fs.readFileSync('./media/menu.jpg') },
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
