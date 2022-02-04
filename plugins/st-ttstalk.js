@@ -15,7 +15,9 @@ let handler = async(m, { conn, text }) => {
 ▢ *Following*: ${json.followingCount}
 ▢ *Private*: ${json.isprivate}
 ▢ *Id*: ${json.id}
-`conn.sendFile(m.chat, thumb, 'tiktokstalk.jpg', hasil, m)
+`
+
+    conn.sendFile(m.chat, thumb, 'tiktokstalk.jpg', hasil, m)
 }
 handler.help = ['tiktokstalk'].map(v => v + ' <username>')
 handler.tags = ['stalk']
