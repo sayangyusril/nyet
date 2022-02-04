@@ -2,7 +2,6 @@ let simple = require('./lib/simple')
 let util = require('util')
 let fs = require('fs')
 let chalk = require('chalk')
-let { MessageType } = require('@adiwajshing/baileys-md')
 
 const isNumber = x => typeof x === 'number' && !isNaN(x)
 const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(resolve, ms))
