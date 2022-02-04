@@ -20,7 +20,9 @@ let handler = async(m, { conn, text }) => {
 ▢ *Following:* ${json.result.following}
 ▢ *Lokasi:* ${json.result.location}
 ▢ *Type:* ${json.result.Type}
-`conn.sendFile(m.chat, thumb, 'githubstalk.jpg', hasil, m)
+`
+
+    conn.sendFile(m.chat, thumb, 'githubstalk.jpg', hasil, m)
 }
 handler.help = ['githubstalk'].map(v => v + ' <query>')
 handler.tags = ['stalk']
