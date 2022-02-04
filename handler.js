@@ -513,7 +513,7 @@ module.exports = {
                 break
         }
     },
-   /* async delete({ remoteJid, fromMe, id, participant }) {
+   /*async delete({ remoteJid, fromMe, id, participant }) {
         if (fromMe) return
         let chats = Object.entries(conn.chats).find(([user, data]) => data.messages && data.messages[id])
         if (!chats) return
