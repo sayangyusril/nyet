@@ -15,7 +15,9 @@ let handler = async(m, { conn, text }) => {
 ▢ *Verivikasi*: ${json.isVerified}
 ▢ *Link*: ${json.link}
 ▢ *Deskripsi*: ${json.description}
-`conn.sendFile(m.chat, thumb, 'ytstalk.jpg', hasil, m)
+`
+
+     conn.sendFile(m.chat, thumb, 'ytstalk.jpg', hasil, m)
 }
 handler.help = ['ytstalk','youtubestalk'].map(v => v + ' <channel>')
 handler.tags = ['stalk']
