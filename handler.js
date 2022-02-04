@@ -172,26 +172,26 @@ module.exports = {
                 if (typeof chat !== 'object') global.db.data.chats[m.chat] = {}
                 if (chat) {
                     if (!('isBanned' in chat)) chat.isBanned = false
-                    if (!('welcome' in chat)) chat.welcome = true
+                    if (!('welcome' in chat)) chat.welcome = false
                     if (!('detect' in chat)) chat.detect = false
                     if (!('sWelcome' in chat)) chat.sWelcome = ''
                     if (!('sBye' in chat)) chat.sBye = ''
                     if (!('sPromote' in chat)) chat.sPromote = ''
                     if (!('sDemote' in chat)) chat.sDemote = ''
-                    if (!('delete' in chat)) chat.delete = false
+                    if (!('delete' in chat)) chat.delete = true
                     if (!('antiLink' in chat)) chat.antiLink = false
                     if (!('simi' in chat)) chat.simi = false
                     if (!('viewonce' in chat)) chat.viewonce = false
                     if (!('antiToxic' in chat)) chat.antiToxic = false
                 } else global.db.data.chats[m.chat] = {
                     isBanned: false,
-                    welcome: true,
+                    welcome: false,
                     detect: false,
                     sWelcome: '',
                     sBye: '',
                     sPromote: '',
                     sDemote: '',
-                    delete: false,
+                    delete: true,
                     antiLink: false,
                     simi: false,
                     viewonce: false,
@@ -422,7 +422,7 @@ module.exports = {
                                 console.error(e)
                             }
                         }
-                       // if (m.limit) m.reply(+ m.limit + ' Limit terpakai')
+                        if (m.limit) m.reply(+ m.limit + ' Limit terpakai')
                     }
                     break
                 }
@@ -513,15 +513,15 @@ module.exports = {
                 break
         }
     },
-   /*async delete({ remoteJid, fromMe, id, participant }) {
-        if (fromMe) return
-        let chats = Object.entries(conn.chats).find(([user, data]) => data.messages && data.messages[id])
-        if (!chats) return
-        let msg = JSON.parse(chats[1].messages[id])
-        let chat = global.db.data.chats[msg.key.remoteJid] || {}
-        if (chat.delete) return
-        await this.reply(msg.key.remoteJid, `
-Terdeteksi @${participant.split`@`[0]} telah menghapus pesan
+  //async delete({ remoteJid, fromMe, id, participant }) {
+      //if (fromMe) return
+      //let chats = Object.entries(conn.chats).find(([user, data]) => data.messages && data.messages[id])
+      //if (!chats) return
+      //let msg = JSON.parse(chats[1].messages[id])
+      //let chat = global.db.data.chats[msg.key.remoteJid] || {}
+      //if (chat.delete) return
+      //await this.reply(msg.key.remoteJid, `
+/*Terdeteksi @${participant.split`@`[0]} telah menghapus pesan
 Untuk mematikan fitur ini, ketik
 *.enable delete*
 `.trim(), msg, {
