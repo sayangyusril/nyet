@@ -1,6 +1,3 @@
-const {
-    BufferJSON,
-} = require('@adiwajshing/baileys-md')
 const simple = require('./lib/simple')
 const util = require('util')
 
