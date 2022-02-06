@@ -6,7 +6,7 @@ let tags = {
   'main': 'MENU UTAMA',
   'game': 'MENU GAME',
   'xp': 'MENU EXP',
-  'premium': 'MENU PREMIUM',
+  'islam': 'MENU ISLAM',
   'group': 'MENU GROUP',
   'absen': 'MENU ABSEN',
   'vote': 'MENU VOTE',
