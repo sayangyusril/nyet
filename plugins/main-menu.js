@@ -3,7 +3,7 @@ let fs = require('fs')
 let path = require('path')
 let moment = require('moment-timezone')
 let levelling = require('../lib/levelling')
-const time = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('DD/MM/YY HH:mm:ss z')
+const time = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('HH:mm:ss')
 let tags = {
   'main': 'MENU UTAMA',
   'game': 'MENU GAME',
@@ -31,7 +31,8 @@ const defaultMenu = {
 │❑ Version: %version
 │❑ Library: Baileys-MD
 │❑ Mode: ${global.opts['self'] ? 'Self' : 'Publik'}
-│❑ Runtime: ${time}
+│❑ Runtime: %uptime
+│❑ Jam: ${time}
 └─
 %readmore`.trimStart(),
   header: '┌ *「 %category 」*',
