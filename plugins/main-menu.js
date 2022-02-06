@@ -1,7 +1,9 @@
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys-md')
 let fs = require('fs')
 let path = require('path')
+let moment = require('moment-timezone')
 let levelling = require('../lib/levelling')
+const time = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('DD/MM/YY HH:mm:ss z')
 let tags = {
   'main': 'MENU UTAMA',
   'game': 'MENU GAME',
@@ -29,7 +31,7 @@ const defaultMenu = {
 │❑ Version: %version
 │❑ Library: Baileys-MD
 │❑ Mode: ${global.opts['self'] ? 'Self' : 'Publik'}
-│❑ Runtime: %uptime
+│❑ Runtime: ${time}
 └─
 %readmore`.trimStart(),
   header: '┌ *「 %category 」*',
