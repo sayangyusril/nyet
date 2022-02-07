@@ -1,27 +1,27 @@
 <p align="center">
-<img src="https://telegra.ph/file/06db0eb84b88d11d76e6a.jpg" alt="SHIRAORI BOT" width="500"/>
+<img src="https://telegra.ph/file/abb6866ea91527250501d.jpg" alt="MARS BOT" width="500"/>
 
 
 </p>
 <p align="center">
-<a href="#"><img title="SHIRAORI BOT MULTI DEVICE" src="https://img.shields.io/badge/SHIRAORI BOT MULTI DEVICE-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="SHIRAORI BOT MULTI DEVICE" src="https://img.shields.io/badge/MARS BOT MULTI DEVICE-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md"><img title="Author" src="https://img.shields.io/badge/Author-Ilman-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/RHns20/MarsBOT-MD"><img title="Author" src="https://img.shields.io/badge/Author-RHns-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md"><img title="Followers" src="https://img.shields.io/github/followers/ilmanhdyt?color=blue&style=flat-square"></a>
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md"><img title="Stars" src="https://img.shields.io/github/stars/ilmanhdyt/ShiraoriBOT-Md?color=red&style=flat-square"></a>
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md/network/members"><img title="Forks" src="https://img.shields.io/github/forks/ilmanhdyt/ShiraoriBOT-Md?color=red&style=flat-square"></a>
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/ilmanhdyt/ShiraoriBOT-Md?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/RHns20/MarsBOT-MD/followers"><img title="Followers" src="https://img.shields.io/github/followers/RHns20?label=Followers&color=white&style=flat-square"></a>
+<a href="https://github.com/RHns20/MarsBOT-MD/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/RHns20/MarsBOT-MD?label=Stars&color=yellow&style=flat-square"></a>
+<a href="https://github.com/RHns20/MarsBOT-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/RHns20/MarsBOT-MD?label=Forks&color=blue&style=flat-square"></a>
+<a href="https://github.com/RHns20/MarsBOT-MD/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/RHns20/MarsBOT-MD?label=Watchers&color=green&style=flat-square"></a>
 </p>
 
 ---
 
-# SHIRAORI BOT Whatsapp MD
+# Mars BOT Whatsapp MD
 ## For Users Termux Install Module [here](https://github.com/ilmanhdyt/node_modules)
 ## Information
-> ShiraoriBOT whatsapp using a Baileys library.
+> MarsBOT whatsapp using a Baileys library.
 > Jika kamu menemukan semacam bug, harap untuk dimaklumi sementara
 >
 > • NOTE: Pastikan Jaringan kalian lancar dan device kalian bagus:v, 
@@ -32,12 +32,13 @@
 <p align="center">
   <a href="https://github.com/ilmanhdyt"><img src="https://github.com/ilmanhdyt.png?size=128" height="128" width="128" /></a>
   <a href="https://github.com/BochilGaming"><img src="https://github.com/BochilGaming.png?size=128" height="128" width="128" /></a>
+  <a href="https://github.com/RHns20"><img src="https://github.com/RHns20.png?size=128" height="128" width="128" /></a>
 </p>
 
 ## Tester Bot
 * Jika kamu menemukan bug jangan lupa buka Issues
-* Info Lebih Lanjut, Chat [owner-Shiraori](https://wa.me/6281351047727)
-* Kamu bisa testing fitur ShiraoriBOT [disini](https://wa.me/62895803135347?text=.menu)
+* Info Lebih Lanjut, Chat [owner-Mars](https://wa.me/6283832492541)
+* Kamu bisa testing fitur MarsBOT [disini](https://wa.me/628819028385?text=.menu)
 
 ## How To Change Menu Display
 ----
@@ -107,8 +108,8 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/shir
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/ilmanhdyt/ShiraoriBOT-Md
-cd ShiraoriBOT-Md
+git clone https://github.com/RHns20/MarsBOT-MD
+cd MarsBOT-MD
 npm install
 npm update
 npm index
@@ -124,8 +125,8 @@ pkg install nodejs
 pkg install ffmpeg
 pkg install imagemagick
 pkg install yarn
-git clone https://github.com/ilmanhdyt/ShiraoriBOT-Md
-cd ShiraoriBOT-Md
+git clone https://github.com/RHns20/MarsBOT-MD
+cd MarsBOT-MD
 yarn
 node .
 ```
@@ -153,10 +154,10 @@ Jika berhasil, akan memberikanmu pesan seperti: `SUCCESS: specified value was sa
 ```
 
 # Thanks to
- [![Nurutomo](https://github.com/Nurutomo.png?size=150)](https://github.com/Nurutomo) | [![Ilman](https://github.com/ilmanhdyt.png?size=150)](https://github.com/ilmanhdyt) | [![Istikmal](https://github.com/BochilGaming.png?size=150)](https://github.com/BochilGaming)
-----|----|----
-[Nurutomo](https://github.com/Nurutomo) | [Ilman](https://github.com/ilmanhdyt) | [Istikmal](https://github.com/BochilGaming)
- Author | yg nambah fitur | yg punya sc
+ [![Nurutomo](https://github.com/Nurutomo.png?size=150)](https://github.com/Nurutomo) | [![Ilman](https://github.com/ilmanhdyt.png?size=150)](https://github.com/ilmanhdyt) | [![Istikmal](https://github.com/BochilGaming.png?size=150)](https://github.com/BochilGaming) | [![RHns](https://github.com/RHns20.png?size=150)](https://github.com/RHns20)
+----|----|----|----
+[Nurutomo](https://github.com/Nurutomo) | [Ilman](https://github.com/ilmanhdyt) | [Istikmal](https://github.com/BochilGaming) | [RHns](https://github.com/RHns20)
+ Author | yg nambah fitur | yg punya sc | Nambah Fitur
 
 ## Donate
-- [Saweria](https://saweria.co/ilmanhdyt)
+- [Saweria](https://saweria.co/botrhns)
