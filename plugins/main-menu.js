@@ -147,8 +147,8 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: 'Source Code',
-               url: 'https://github.com/RHns20/MarsBOT-MD'
+               displayText: 'Instagram',
+               url: instagram
              }
 
            },
