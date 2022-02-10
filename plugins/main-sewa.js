@@ -6,8 +6,8 @@ let handler = async (m) => {
     else who = m.sender
     let user = global.db.data.users[who]
 let anu = `LIST SEWA BOT\n
-10 Hari - 8000
-30 Hari - 20000\n
+10 Hari - 5k
+30 Hari - 20k\n
 Pulsa 
 Axis [083832492541] + 2k
 Indosat [085856508824] + 2k\n
