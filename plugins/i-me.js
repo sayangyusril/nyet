@@ -23,7 +23,7 @@ let anu = `╭───❑ 「 BALANCE 」 ❑────
            hydratedButtons: [{
              urlButton: {
                displayText: 'Source Code',
-               url: 'https://github.com/ilmanhdyt/ShiraoriBOT-Md'
+               url: 'https://github.com/RHns20/MarsBOT-MD'
              }
 
            },
@@ -58,7 +58,7 @@ let anu = `╭───❑ 「 BALANCE 」 ❑────
          { messageId: template.key.id }
      )
 }
-handler.help = ['my', 'my @user']
+handler.help = ['my', 'my @user', 'profilr']
 handler.tags = ['xp']
 handler.command = /^(my)$/i
 
