@@ -1,9 +1,7 @@
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys-md')
 let fs = require('fs')
 let path = require('path')
-let moment = require('moment-timezone')
 let levelling = require('../lib/levelling')
-const time = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('HH:mm:ss')
 let tags = {
   'main': 'MENU UTAMA',
   'game': 'MENU GAME',
@@ -32,7 +30,6 @@ const defaultMenu = {
 │❑ Library: Baileys-MD
 │❑ Mode: ${global.opts['self'] ? 'Self' : 'Publik'}
 │❑ Runtime: %uptime
-│❑ Jam: ${time}
 └─
 %readmore`.trimStart(),
   header: '┌ *「 %category 」*',
@@ -155,20 +152,6 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
              }
 
            },
-             {
-             urlButton: {
-               displayText: 'Saweria',
-               url: 'https://saweria.co/botrhnsh'
-             }
-
-           },
-               {
-             quickReplyButton: {
-               displayText: 'Owner',
-               id: '.owner',
-             }
-
-           },
            {
              quickReplyButton: {
                displayText: 'Donasi',
@@ -180,6 +163,13 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
              quickReplyButton: {
                displayText: 'Sewa',
                id: '.sewa',
+             }
+
+           },
+           {
+             quickReplyButton: {
+               displayText: 'My',
+               id: '.my',
              }
            }]
          }
