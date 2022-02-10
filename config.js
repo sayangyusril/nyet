@@ -8,6 +8,7 @@ global.APIs = { // API Prefix
   nrtm: 'https://nurutomo.herokuapp.com',
   bg: 'http://bochil.ddns.net',
   kotz: 'https://api.justkotz.tech',
+  caliph: 'https://caliphapi.com',
   xteam: 'https://api.xteam.xyz',
   amel: 'https://melcanz.com',
   lol: 'https://api.lolhuman.xyz',
@@ -18,30 +19,29 @@ global.APIs = { // API Prefix
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'http://api.justkotz.tech': 'RHns',
-  'https://api.xteam.xyz': 'f592b4366be3922c',
-  'https://melcanz.com': 'RHns',
-  'https://api.lolhuman.xyz': 'rey2k21',
-  'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.xyz': 'apivinz',
-  'https://pencarikode.xyz': 'pais',
-  'https://leyscoders-api.herokuapp.com': 'dappakntlll'
+  'https://api.justkotz.tech': 'apikeylu',
+  'https://caliphapi.com': 'apikeylu',
+  'https://api.xteam.xyz': 'apikeylu',
+  'https://melcanz.com': 'apikeylu',
+  'https://api.lolhuman.xyz': 'apikeylu',
+  'https://zahirr-web.herokuapp.com': 'apikeylu',
+  'https://api.zeks.xyz': 'apikeylu',
+  'https://pencarikode.xyz': 'apikeylu',
+  'https://leyscoders-api.herokuapp.com': 'apikeylu'
 }
 
 // Sticker WM
 global.packname = 'Made by'
-global.author = 'MarsBOT'
-global.dl = 'Download by : MarsBOT'
+global.author = 'MarsBOT-MD'
+
 global.benar = 'benar mendapatkan'
 global.salah = 'salah'
 global.dikit = 'hampir benar'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.wm = 'Made by : RHns'
-global.media = 'https://telegra.ph/file/aed723ee59556f948f9a0.jpg'
-
+global.media = 'https://telegra.ph/file/1a0e237dc563e7cc1a143.jpg'
 global.wait = '*tunggu sedang diproses...*'
-global.eror = '*Server Error*'
-global.down = 'Api Down'
+global.eror = '*bermasalah...*'
 
 global.multiplier = 69 // The higher, The harder levelup
 
