@@ -22,7 +22,7 @@ let duit = `┌「 *Donasi - Pulsa* 」
            hydratedButtons: [{
              urlButton: {
                displayText: 'Saweria',
-               url: 'https://saweria.co/botrhns',
+               url: 'https://saweria.co/botrhnsh',
              }
 
            },
