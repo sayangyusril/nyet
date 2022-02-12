@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://telegra.ph/file/75585888884ec31ff99b3.jpg" alt="MARS BOT" width="500"/>
+<img src="https://telegra.ph/file/75585888884ec31ff99b3.jpg" alt="MARS BOT" width="700"/>
 
 
 </p>
