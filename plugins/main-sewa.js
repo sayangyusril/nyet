@@ -23,7 +23,7 @@ Dana [083832492541]`
            hydratedButtons: [{
              urlButton: {
                displayText: 'Saweria',
-               url: 'https://saweria.co/botrhns',
+               url: 'https://saweria.co/botrhnsh',
              }
 
            },
