@@ -441,6 +441,47 @@ module.exports = {
         }
     },
     async participantsUpdate({ id, participants, action }) {
+    //if (!opts['self']) return
+    //if (!global.isInit) return
+    let chat = global.db.data.chats[id] || {}
+    let text = ''
+    switch (action) {
+      case 'add':
+      case 'remove':
+        if (chat.welcome) {
+          let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
+          for (let user of participants) {
+            //if (user.includes(conn.user.id)) return // biar ngga nyambut diri sendiri, kalo simulasi harus tag yang lain
+            let pp = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
+            let begron = './src/dark.png'
+            // https://i.ibb.co/KhtRxwZ/dark.pngt
+            try {
+              pp = await this.profilePictureUrl(user)
+            } catch (e) {
+            } finally {
+              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'selamat datang, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc.toString()).replace('@user', await this.getName(user)) :
+                (chat.sBye || this.bye || conn.bye || 'sampai jumpa, @user!')).replace(/@user/g, await this.getName(user))
+              let wel = API('hardianto', '/api/welcome3', {
+                profile: pp,
+                name: await this.getName(user),
+                bg: 'https://telegra.ph/file/c538a6f5b0649a7861174.png',
+                namegb: await this.getName(id),
+                member: groupMetadata.participants.length
+              })
+              let lea = API('hardianto', '/api/goodbye3', {
+                profile: pp,
+                name: await this.getName(user),
+                bg: 'https://telegra.ph/file/c538a6f5b0649a7861174.png',
+                namegb: await this.getName(id),
+                member: groupMetadata.participants.length
+              })
+              await this.sendHButtonLoc(id, action === 'add' ? wel : lea, text, wm, dtl, link, action === 'add' ? 'selamat datang' : 'sampai jumpa', 'FokusID', m)
+            }
+          }
+        }
+        break
+    /*
+    async participantsUpdate({ id, participants, action }) {
         if (opts['self']) return
         // if (id in conn.chats) return // First login will spam
         if (global.isInit) return
@@ -468,6 +509,7 @@ module.exports = {
                     }
                 }
                 break
+*/
             case 'promote':
                 text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
             case 'demote':
