@@ -453,7 +453,7 @@ module.exports = {
           for (let user of participants) {
             //if (user.includes(conn.user.id)) return // biar ngga nyambut diri sendiri, kalo simulasi harus tag yang lain
             let pp = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
-            let begron = './src/dark.png'
+            let begron = './media/menu.jpg'
             // https://i.ibb.co/KhtRxwZ/dark.pngt
             try {
               pp = await this.profilePictureUrl(user)
@@ -475,7 +475,7 @@ module.exports = {
                 namegb: await this.getName(id),
                 member: groupMetadata.participants.length
               })
-              await this.sendHButtonLoc(id, action === 'add' ? wel : lea, text, wm, dtl, link, action === 'add' ? 'selamat datang' : 'sampai jumpa', 'FokusID', m)
+              await this.sendHButtonLoc(id, action === 'add' ? wel : lea, text, wm, instagram, action === 'add' ? 'selamat datang' : 'sampai jumpa', 'FokusID', m)
             }
           }
         }
