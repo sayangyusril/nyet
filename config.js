@@ -7,8 +7,6 @@ global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
   bg: 'http://bochil.ddns.net',
-  kotz: 'https://api.justkotz.tech',
-  caliph: 'https://caliphapi.com',
   xteam: 'https://api.xteam.xyz',
   amel: 'https://melcanz.com',
   lol: 'https://api.lolhuman.xyz',
@@ -27,6 +25,7 @@ global.APIKeys = { // APIKey Here
   'https://api.lolhuman.xyz': 'apikeylu',
   'https://zahirr-web.herokuapp.com': 'apikeylu',
   'https://api.zeks.xyz': 'apikeylu',
+  'https://hardianto.xyz': 'hardianto',
   'https://pencarikode.xyz': 'apikeylu',
   'https://leyscoders-api.herokuapp.com': 'apikeylu'
 }
@@ -44,10 +43,6 @@ global.instagram = 'https://instagram.com/bgsrhnsh'
 global.media = 'https://telegra.ph/file/1a0e237dc563e7cc1a143.jpg'
 global.wait = '*tunggu sedang diproses...*'
 global.eror = '*bermasalah...*'
-global.dtl = 'Sorce Code'
-global.link = 'https://wa.me/message/3VBSFONVCZQ5P1'
-global.dtc = 'Owner'
-global.call = '+62 813-2017-0984'
 
 global.multiplier = 69 // The higher, The harder levelup
 
