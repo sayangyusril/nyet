@@ -20,14 +20,14 @@ global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.justkotz.tech': 'apikeylu',
   'https://caliphapi.com': 'apikeylu',
-  'https://api.xteam.xyz': 'apikeylu',
+  'https://api.xteam.xyz': 'apivinz',
   'https://melcanz.com': 'apikeylu',
-  'https://api.lolhuman.xyz': 'apikeylu',
+  'https://api.lolhuman.xyz': 'd90a9e986e18778b',
   'https://zahirr-web.herokuapp.com': 'apikeylu',
-  'https://api.zeks.xyz': 'apikeylu',
+  'https://api.zeks.xyz': 'apivinz',
   'https://hardianto.xyz': 'hardianto',
-  'https://pencarikode.xyz': 'apikeylu',
-  'https://leyscoders-api.herokuapp.com': 'apikeylu'
+  'https://pencarikode.xyz': 'pais',
+  'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
 // Sticker WM
